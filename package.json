@@ -40,6 +40,7 @@
     "postcss-pxtorem": "^4.0.1",
     "postcss-rtl": "^0.5.10",
     "postcss-sorting": "^2.1.0",
+    "pug": "^2.0.0-rc.2",
     "stylelint": "^7.10.1",
     "stylelint-order": "^0.4.4",
     "stylelint-scss": "^1.4.4",

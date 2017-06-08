@@ -13,7 +13,7 @@ app.use('/assets', express.static(__dirname + "/assets"));
 
 //Routes
 app.get('/', function(req, res){
-	res.render('home');
+	res.render('index');
 });
 
 app.get('/demo', function(req, res){

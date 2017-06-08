@@ -8,7 +8,11 @@ a{
 	color: #d9534f;
 }
 
-.head_logo{
+p{
+	text-align: center;
+}
+
+.headlogo{
 	height: 15%;
 	width: 20%;
 }
@@ -26,4 +30,7 @@ a{
 .container .logo h1{
 	font-size: 50px;
 	color: #3d4a57;
+}
+#footer{
+	text-align: center;
 }

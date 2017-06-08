@@ -1,16 +1,27 @@
-//base layout
-doctype
+extends layout.pug
 
-html
-	head
-		title SDD
-		link(rel='stylesheet', href='/assets/css/style.css')
-	body
-		block head
-		block content
-		block foot
-			hr
-			#footer
-			center
-				a(href='https://github.com/sahil505/StyleGuideDesigner', target='_blank'): img.icon(src="/assets/img/github_icon.png")
-				<br/>Developed for <a href='https://www.phpbb.com/' target='_blank'>phpBB</a>
+block head
+	.container
+		.logo
+			img.headlogo(src='/assets/img/phpbblogo.png')
+			h1 Styleguide
+			img.icon(src='/assets/img/github_icon.png')
+		.content
+			p A Styleguide Driven Development System for creating, managaing, customizing, & editing themes for phpBB.
+			p GSoC 2017 project being developed by Sahil Khokhar.
+		.home_btn
+			- var btnType = 'info'
+			- var btnSize = 'lg'
+			a(href='./demo')
+				button(type='button' class='btn btn-${btnType} btn-${btnSize}') Demo
+			|
+			|
+			a(href='./documentation')
+				button(type='button' class='btn btn-${btnType} btn-${btnSize}') Documentation
+			|
+			|
+			a(href='./settings')
+				button(type='button' class='btn btn-${btnType} btn-${btnSize}') App Settings
+		hr
+block content
+	p Content of the Home page will go here!

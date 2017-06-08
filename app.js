@@ -6,12 +6,14 @@ var app = express();
 
 //All environments
 app.set('port', process.env.PORT || 3000);
-app.set('views', './views');
+app.set('views', './views/template');
 app.set('view engine', 'pug');
+
+app.use('/assets', express.static(__dirname + "/assets"));
 
 //Routes
 app.get('/', function(req, res){
-	res.render('index');
+	res.render('home');
 });
 
 app.get('/demo', function(req, res){

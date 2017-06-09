@@ -1,36 +1,38 @@
-.icon{
+.icon {
 	height: 3%;
 	width: 3%;
 }
 
-a{
+a {
 	text-decoration: none;
 	color: #d9534f;
 }
 
-p{
+p {
 	text-align: center;
 }
 
-.head-logo{
+.head-logo {
 	height: 15%;
 	width: 20%;
 }
 
-.container{
+.container {
 	text-align: center;
 	font-family: sans-serif;
 }
 
-.container p{
+.container p {
 	padding-left: 19%;
 	padding-right: 19%;
 }
 
-.container .logo h1{
+.container 
+.logo h1 {
 	font-size: 50px;
 	color: #3d4a57;
 }
-#footer{
+
+#footer {
 	text-align: center;
 }

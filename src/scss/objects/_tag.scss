@@ -1,0 +1,39 @@
+//------------------------------------------------------------------------------
+// #object: Tag
+//------------------------------------------------------------------------------
+// #description
+//
+//------------------------------------------------------------------------------
+
+//
+// #settings
+
+// Layout Variables
+$tag-spacing: 8px !default;
+$tag-border-radius: $default-border-radius !default;
+
+// Theme Variables
+$tag-background-color: $yellow-100 !default;
+$tag-color: $black-54 !default;
+
+//
+// #scss
+
+.o-tag {
+	text-align: center;
+	vertical-align: middle;
+	background-color: $tag-background-color;
+	border-radius: $tag-border-radius;
+	color: $tag-color;
+	display: inline-block;
+	margin: 0 $tag-spacing 0 0;
+	padding: ($tag-spacing / 4) $tag-spacing;
+
+	// Empty tags collapse automatically
+	&:empty {
+		display: none;
+	}
+	@media (min-width: $bp-md) {
+		white-space: nowrap;
+	}
+}

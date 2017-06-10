@@ -9,19 +9,14 @@ block head
 		.content
 			p A Styleguide Driven Development System for creating, managaing, customizing, & editing themes for phpBB.
 			p GSoC 2017 project being developed by Sahil Khokhar.
-		.home_btn
-			- var btnType = "info"
-			- var btnSize = "lg"
-			a(href="./demo")
-				button(type="button" class="btn btn-${btnType} btn-${btnSize}") Demo
+		.home-buttons
+			a(href="./demo") Demo
 			|
 			|
-			a(href="./documentation")
-				button(type="button" class="btn btn-${btnType} btn-${btnSize}") Documentation
+			a(href="./documentation") Documentation
 			|
 			|
-			a(href="./settings")
-				button(type="button" class="btn btn-${btnType} btn-${btnSize}") App Settings
+			a(href="./settings") App Settings
 		hr
 block content
 	p Content of the Home page will go here!

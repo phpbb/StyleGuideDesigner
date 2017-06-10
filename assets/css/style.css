@@ -14,7 +14,8 @@
 	color: #3d4a57;
 }
 
-#footer {
+#footer,
+.page-heading {
 	text-align: center;
 }
 

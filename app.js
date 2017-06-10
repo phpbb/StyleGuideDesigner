@@ -1,7 +1,6 @@
 var http = require('http');
-var express = require('express');
 var path = require('path');
-
+var express = require('express');
 
 var app = express();
 
@@ -29,6 +28,6 @@ app.get('/settings', function (req, res) {
 	res.render('settings');
 });
 
-var server = http.createServer(app).listen(app.get('port'), function () {
+http.createServer(app).listen(app.get('port'), function () {
 	console.log('Express server listening on port ' + app.get('port'));
 });

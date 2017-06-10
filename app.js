@@ -9,6 +9,7 @@ app.set('port', process.env.PORT || 3000);
 app.set('views', './views/template');
 app.set('view engine', 'pug');
 
+// Set static path
 app.use(express.static(path.join(__dirname, 'assets')));
 
 // Routes

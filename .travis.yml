@@ -9,4 +9,4 @@ cache:
 install: npm install
 before_script:
     - npm install -g gulp
-script: app.js
+script: gulpfile.js

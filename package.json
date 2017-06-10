@@ -11,8 +11,7 @@
     ]
   },
   "scripts": {
-    "test": "xo && gulp setup && gulp test && stylelint --config ./.stylelintrc './**/*.scss'",
-    "postinstall": "gulp setup"
+    "test": "xo && gulp setup && gulp test && stylelint --config ./.stylelintrc './**/*.scss'"
   },
   "repository": {
     "type": "git",

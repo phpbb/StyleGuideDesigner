@@ -170,7 +170,7 @@ gulp.task('setup:functions', () => {
 		.src('node_modules/base-l.tools/function/*.scss')
 		.pipe(gulp.dest('src/scss/tools/function/'));
 
-	return functions;
+	return funcitons;
 });
 
 gulp.task('watch', () => {

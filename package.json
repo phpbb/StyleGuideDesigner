@@ -3,8 +3,16 @@
   "version": "1.0.0",
   "description": "Styleguide Driven Development System for creating, managing, customizing, & editing themesfor phpBB.",
   "main": "app.js",
+  "xo": {
+    "env": [
+      "browser",
+      "node",
+      "jquery"
+    ]
+  },
   "scripts": {
-    "test": "app.js"
+    "test": "xo && gulp setup && gulp test && stylelint --config ./.stylelintrc './**/*.scss'",
+    "postinstall": "gulp setup"
   },
   "repository": {
     "type": "git",

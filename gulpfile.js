@@ -16,7 +16,7 @@ const pkg = require('./package.json');
 
 // Config
 const build = {
-	css: './dist/assets/css',
+	css: './assets/css',
 	docs: './docs/_media/',
 	scss: './src/scss/'
 };
@@ -170,7 +170,7 @@ gulp.task('setup:functions', () => {
 		.src('node_modules/base-l.tools/function/*.scss')
 		.pipe(gulp.dest('src/scss/tools/function/'));
 
-	return funcitons;
+	return functions;
 });
 
 gulp.task('watch', () => {

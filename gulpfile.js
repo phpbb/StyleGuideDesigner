@@ -102,7 +102,7 @@ gulp.task('watch', function () {
 	gulp.watch('src/scss/**/*.scss', ['css', 'minify']);
 });
 
-gulp.task('setup', ['setup:settings', 'setup:mixins', 'setup:functions']);
+gulp.task('setup', ['setup:mixins', 'setup:functions']);
 gulp.task('serve', ['watch']);
 gulp.task('test', ['css', 'minify']);
 gulp.task('default', ['css', 'minify', 'watch']);

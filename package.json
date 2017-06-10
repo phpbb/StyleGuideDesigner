@@ -4,7 +4,7 @@
   "description": "Styleguide Driven Development System for creating, managing, customizing, & editing themesfor phpBB.",
   "main": "app.js",
   "scripts": {
-    "test": "app"
+    "test": "app.js"
   },
   "repository": {
     "type": "git",

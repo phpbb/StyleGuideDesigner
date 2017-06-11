@@ -6,7 +6,7 @@ var app = express();
 
 // All environments
 app.set('port', process.env.PORT || 3000);
-app.set('views', './views/template');
+app.set('views', './views');
 app.set('view engine', 'pug');
 
 // Set static path

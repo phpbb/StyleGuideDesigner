@@ -1,21 +1,22 @@
 extends layout.pug
 
 block head
-	.container
+	header
 		.logo
-			h1 Styleguide
+			h1 <br>Styleguide
 			img.icon(src="/img/github-icon-1.svg" alt="github")
 		.content
 			p A Styleguide Driven Development System for creating, managaing, customizing, & editing themes for phpBB.
 			p GSoC 2017 project being developed by Sahil Khokhar.
-		.home-buttons
-			a(href="./demo") Demo
+		.home-navigation
+			a.button(href="./demo") Demo
 			|
 			|
-			a(href="./documentation") Documentation
+			a.button(href="./documentation") Documentation
 			|
 			|
-			a(href="./settings") App Settings
+			a.button(href="./settings") App Settings
 		hr
 block content
-	p Content of the Home page will go here!
+	.container
+		p Content of the Home page will go here!

@@ -294,6 +294,53 @@ textarea,
 	color: #ffffff;
 }
 
+/* SDD Custom CSS */
+img[alt="github"] {
+	height: 3%;
+	width: 3%;
+}
+
+footer,
+header {
+	text-align: center;
+}
+
+.container {
+	text-align: center;
+}
+
+.navbar {
+	overflow: hidden;
+    background-color: #f1f1f1;
+}
+
+.navbar ul {
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li a {
+	float: left;
+	font-size: 1.0rem;
+    color: #868686;
+    text-align: center;
+    padding: 17px 16px;
+    text-decoration: none;
+}
+
+.navbar .sdd-logo {
+  color: #868686;
+  font-size: 2.1rem;
+  padding: 0 0.5rem;
+  white-space: nowrap;	
+}
+
+.navbar .icon {
+	float: right;
+}
+/* End of SDD Custom CSS */
+
 svg {
 	fill: currentColor;
 }

@@ -1,7 +1,19 @@
 extends layout.pug
 
 block head
-	h1.page-heading Settings Page
+	.navbar
+		.navbar
+		ul
+			li
+				a.sdd-logo(href="/") Logo
+			li
+				a(href="/demo") Demo
+			li
+				a(href="/documentation") Documentation
+			li
+				a(href="#") App Settings
+		a(href="https://github.com/sahil505/StyleGuideDesigner", target="_blank"): img.icon(src="/img/github-icon-1.svg" alt="github")
 	hr
 block content
-	p Content of the Settings page will go here!
+	.container
+		p Content of the Settings page will go here!

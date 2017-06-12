@@ -14,5 +14,16 @@ block head
 		a(href="https://github.com/sahil505/StyleGuideDesigner", target="_blank"): img.icon(src="/img/github-icon-1.svg" alt="github")
 	hr
 block content
-	.container
-		p Content of the Demo page will go here!
+	.container-fluid
+		.row
+			.col-sm-3.col-lg-2
+				nav.side-navbar.navbar-default.navbar-fixed-side
+					ul
+						li
+							a(href="#") Link-1
+						li
+							a(href="#") Link-2
+						li
+							a(href="#") Link-3
+			.col-sm-9.col-lg-10
+				p Page content

@@ -311,34 +311,119 @@ header {
 
 .navbar {
 	overflow: hidden;
-    background-color: #f1f1f1;
+	background-color: #f1f1f1;
 }
 
 .navbar ul {
 	list-style-type: none;
-    margin: 0;
-    padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 .navbar ul li a {
 	float: left;
 	font-size: 1.0rem;
-    color: #868686;
-    text-align: center;
-    padding: 17px 16px;
-    text-decoration: none;
+	color: #868686;
+	text-align: center;
+	padding: 17px 16px;
+	text-decoration: none;
 }
 
 .navbar .sdd-logo {
-  color: #868686;
-  font-size: 2.1rem;
-  padding: 0 0.5rem;
-  white-space: nowrap;	
+	color: #868686;
+	font-size: 2.1rem;
+	padding: 0 0.5rem;
+	white-space: nowrap;	
 }
 
 .navbar .icon {
 	float: right;
 }
+
+.container-fluid {
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.container-fluid:before,
+.row:before,
+.row:after,
+.container-fluid:after {
+	display: table;
+	content: " ";
+}
+
+.container-fluid:after,
+.row:after {
+	clear: both;
+}
+
+.row {
+	margin-right: -15px;
+	margin-left: -15px;
+}
+
+.col-sm-3, .col-lg-2, .col-sm-9 {
+	position: relative;
+	min-height: 1px;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+@media (min-width: 768px) {
+	.col-sm-9 {
+		float: left;
+		width: 75%;
+	}
+}
+
+@media (min-width: 768px) {
+	.col-sm-3 {
+		float: left;
+		width: 25%;
+	}
+}
+
+@media (min-width: 1200px) {
+	.col-lg-2{
+		float: left;
+		width: 16.66666667%;
+	}
+}
+
+nav {
+	display: block;
+}
+
+.side-navbar {
+	/*position: relative;*/
+	text-align: center;
+	min-height: 50px;
+	margin-bottom: 20px;
+	border: 1px solid transparent;
+	color: #868686;
+	font-size: 2.1rem;
+	padding: 0 0.5rem;
+	white-space: nowrap;	
+}
+
+.side-navbar li:hover {
+	background: #f1f1f1;
+}
+
+@media (min-width: 768px) {
+	.side-navbar {
+		border-radius: 4px;
+	}
+}
+
+.navbar-default {
+	background-color: #f8f8f8;
+	border-color: #e7e7e7;
+}
+
 /* End of SDD Custom CSS */
 
 svg {

@@ -9,21 +9,21 @@ html
 		link(rel="stylesheet", href="/css/core.0.12.0.css")
 	body
 		block head
-			.navbar
-				ul
+			.c-navbar
+				ul.c-navbar-menu
+					li.c-navbar-menu-item
+						a.c-navbar-menu-link#c-navbar-logo(href="/") Logo
 					li
-						a.sdd-logo(href="/") Logo
+						a.c-navbar-menu-link(href="/demo") Demo
 					li
-						a(href="/demo") Demo
+						a.c-navbar-menu-link(href="/documentation") Documentation
 					li
-						a(href="/documentation") Documentation
-					li
-						a(href="/settings") App Settings
-				a(href="https://github.com/sahil505/StyleGuideDesigner", target="_blank"): img.icon(src="/img/github-icon-1.svg" alt="github")
+						a.c-navbar-menu-link(href="/settings") App Settings
+				a(href="https://github.com/sahil505/StyleGuideDesigner", target="_blank"): img.c-github-icon(src="/img/github-icon-1.svg" alt="github")
 			hr
 		block content
 		block foot
 			footer
 				hr
-				a(href="https://github.com/sahil505/StyleGuideDesigner", target="_blank"): img.icon(src="/img/github-icon-1.svg" alt="github")
+				a(href="https://github.com/sahil505/StyleGuideDesigner", target="_blank"): img.c-github-icon(src="/img/github-icon-1.svg" alt="github")
 				p Developed for <a href="https://www.phpbb.com/" target="_blank">phpBB</a>

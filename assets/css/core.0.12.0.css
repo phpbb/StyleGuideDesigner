@@ -309,18 +309,18 @@ header {
 	text-align: center;
 }
 
-.navbar {
+.c-navbar {
 	overflow: hidden;
 	background-color: #f1f1f1;
 }
 
-.navbar ul {
+.c-navbar-menu {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
 }
 
-.navbar ul li a {
+.c-navbar-menu-link {
 	float: left;
 	font-size: 1.0rem;
 	color: #868686;
@@ -329,14 +329,20 @@ header {
 	text-decoration: none;
 }
 
-.navbar .sdd-logo {
+.c-navbar-menu-link:hover {
+	text-decoration: none;
+	background-color: #eeeeee;
+	color: #212121;
+}
+
+#c-navbar-logo {
 	color: #868686;
 	font-size: 2.1rem;
 	padding: 0 0.5rem;
 	white-space: nowrap;	
 }
 
-.navbar .icon {
+.c-navbar .c-github-icon {
 	float: right;
 }
 
@@ -363,7 +369,9 @@ header {
 	margin-left: -15px;
 }
 
-.col-sm-3, .col-lg-2, .col-sm-9 {
+.col-sm-3, 
+.col-lg-2, 
+.col-sm-9 {
 	position: relative;
 	min-height: 1px;
 	padding-right: 15px;
@@ -391,7 +399,7 @@ header {
 	}
 }
 
-.side-navbar {
+.c-sidebar {
 	text-align: center;
 	min-height: 500px;
 	margin: 0;
@@ -400,24 +408,45 @@ header {
 	border-color: #e7e7e7;	
 }
 
-.side-navbar ul {
+.c-sidemenu {
 	list-style-type: none;
 	font-size: 1.3rem;
 	margin: 0;
 	padding: 0;
 }
 
-.side-navbar li {
+.c-sidemenu-item {
 	padding-top: 1.0rem;
 	color: #868686;
 }
 
-.side-navbar li:hover {
-	background: #eaeaea;
+.c-sidemenu-link {
+	font-size: 1.25rem;
+	font-weight: 500;
+	line-height: normal;
+	white-space: nowrap;
+	text-decoration: none;
+	letter-spacing: normal;
+	color: #868686;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: row;
+	flex-direction: row;
+	-webkit-align-items: center;
+	align-items: center;
+	height: 48px;
+	padding: 0 1rem;
+	cursor: pointer;
+}
+
+.c-sidemenu-link:hover {
+	text-decoration: none;
+	background-color: #eeeeee;
+	color: #212121;
 }
 
 @media (min-width: 768px) {
-	.side-navbar {
+	.c-sidebar {
 		border-radius: 4px;
 	}
 }

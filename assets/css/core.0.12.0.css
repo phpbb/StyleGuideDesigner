@@ -341,8 +341,6 @@ header {
 }
 
 .container-fluid {
-	padding-right: 15px;
-	padding-left: 15px;
 	margin-right: auto;
 	margin-left: auto;
 }
@@ -393,24 +391,29 @@ header {
 	}
 }
 
-nav {
-	display: block;
+.side-navbar {
+	text-align: center;
+	min-height: 500px;
+	margin: 0;
+	border: 1px solid transparent;
+	background-color: #f1f1f1;
+	border-color: #e7e7e7;	
 }
 
-.side-navbar {
-	/*position: relative;*/
-	text-align: center;
-	min-height: 50px;
-	margin-bottom: 20px;
-	border: 1px solid transparent;
+.side-navbar ul {
+	list-style-type: none;
+	font-size: 1.3rem;
+	margin: 0;
+	padding: 0;
+}
+
+.side-navbar li {
+	padding-top: 1.0rem;
 	color: #868686;
-	font-size: 2.1rem;
-	padding: 0 0.5rem;
-	white-space: nowrap;	
 }
 
 .side-navbar li:hover {
-	background: #f1f1f1;
+	background: #eaeaea;
 }
 
 @media (min-width: 768px) {
@@ -418,12 +421,6 @@ nav {
 		border-radius: 4px;
 	}
 }
-
-.navbar-default {
-	background-color: #f8f8f8;
-	border-color: #e7e7e7;
-}
-
 /* End of SDD Custom CSS */
 
 svg {

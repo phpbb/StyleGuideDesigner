@@ -25,17 +25,17 @@
 
 	&-menu-link {
 		float: left;
-		font-size: 1.0rem;
+		font-size: 1rem;
 		color: #868686;
 		text-align: center;
 		padding: 17px 16px;
 		text-decoration: none;
 
-			&:hover {
-				text-decoration: none;
-				background-color: #eeeeee;
-				color: #212121;
-			}
+				&:hover {
+						text-decoration: none;
+						background-color: #eeeeee;
+						color: #212121;
+				}
 	}
 
 
@@ -50,7 +50,7 @@
 
 	&-menu-icon {
 		float: right;
-		font-size: 1.0rem;
+		font-size: 1rem;
 		color: #868686;
 		text-align: center;
 		padding: 17px 16px;

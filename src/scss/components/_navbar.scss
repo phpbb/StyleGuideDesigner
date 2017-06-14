@@ -1,0 +1,59 @@
+//------------------------------------------------------------------------------
+// @component: Navbar
+//------------------------------------------------------------------------------
+// @description
+//
+//------------------------------------------------------------------------------
+
+//
+// @settings
+
+// Layout Variables
+
+
+//
+// @scss
+.c-navbar {
+	overflow: hidden;
+	background-color: #f1f1f1;
+
+	&-menu {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	&-menu-link {
+		float: left;
+		font-size: 1.0rem;
+		color: #868686;
+		text-align: center;
+		padding: 17px 16px;
+		text-decoration: none;
+
+			&:hover {
+				text-decoration: none;
+				background-color: #eeeeee;
+				color: #212121;
+			}
+	}
+
+
+	&-menu-logo {
+		float: left;
+		font-size: 1.4rem;
+		color: #868686;
+		text-align: center;
+		padding: 17px 16px;
+		text-decoration: none;
+	}
+
+	&-menu-icon {
+		float: right;
+		font-size: 1.0rem;
+		color: #868686;
+		text-align: center;
+		padding: 17px 16px;
+		text-decoration: none;
+	}
+}

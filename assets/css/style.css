@@ -33,14 +33,16 @@ header {
 	color: #212121;
 }
 
-#c-navbar-logo {
+.c-navbar-menu-logo {
+	float: left;
+	font-size: 1.4rem;
 	color: #868686;
-	font-size: 2.1rem;
-	padding: 0 0.5rem;
-	white-space: nowrap;	
+	text-align: center;
+	padding: 17px 16px;
+	text-decoration: none;
 }
 
-.c-navbar .c-github-icon {
+.c-navbar-menu-icon {
 	float: right;
 	font-size: 1.0rem;
 	color: #868686;

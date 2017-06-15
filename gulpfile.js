@@ -12,7 +12,6 @@ var stylefmt = require('gulp-stylefmt');
 var sorting = require('postcss-sorting');
 var torem = require('postcss-pxtorem');
 var sortOrder = require('./.postcss-sorting.json');
-var pkg = require('./package.json');
 
 // Config
 var build = {
@@ -69,10 +68,6 @@ gulp.task('css', function () {
 		])
 	)
 	.pipe(stylefmt())
-	.pipe(rename({
-		suffix: '.' + pkg.version,
-		extname: '.css'
-	}))
 	.pipe(sourcemaps.write('./'))
 	.pipe(gulp.dest(build.css));
 
@@ -85,7 +80,7 @@ gulp.task('clean', function () {
 
 gulp.task('minify', ['css'], function () {
 	var css = gulp
-	.src(build.css + '/*.' + pkg.version + '.css')
+	.src(build.css + '/theme.css')
 	.pipe(sourcemaps.init())
 	.pipe(cssnano())
 	.pipe(rename({

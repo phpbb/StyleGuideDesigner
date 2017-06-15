@@ -1,0 +1,54 @@
+{
+  "name": "sdd",
+  "version": "1.0.0",
+  "description": "Styleguide Driven Development System for creating, managing, customizing, & editing themesfor phpBB.",
+  "main": "app.js",
+  "xo": {
+    "env": [
+      "browser",
+      "node",
+      "jquery"
+    ]
+  },
+  "scripts": {
+    "test": "xo && gulp test && stylelint --config ./.stylelintrc './**/*.scss'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sahil505/StyleGuideDesigner.git"
+  },
+  "keywords": [
+    "sdd",
+    "style",
+    "themes"
+  ],
+  "author": "Sahil Khokhar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sahil505/StyleGuideDesigner/issues"
+  },
+  "homepage": "https://github.com/sahil505/StyleGuideDesigner#readme",
+  "dependencies": {
+    "del": "^2.2.2",
+    "express": "^4.15.3",
+    "express-validator": "^3.2.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-data": "^1.2.1",
+    "gulp-nunjucks-render": "^2.2.1",
+    "gulp-postcss": "^7.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.0",
+    "gulp-stylefmt": "^1.1.0",
+    "postcss-pxtorem": "^4.0.1",
+    "postcss-rtl": "^0.5.10",
+    "postcss-sorting": "^2.1.0",
+    "pug": "^2.0.0-rc.2",
+    "stylelint": "^7.10.1",
+    "stylelint-order": "^0.4.4",
+    "stylelint-scss": "^1.4.4",
+    "xo": "^0.16.0"
+  }
+}

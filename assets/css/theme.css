@@ -4,18 +4,6 @@
 	overflow: hidden;
 }
 
-.c-navbar-svg {
-	position: absolute;
-	width: 0;
-	height: 0;
-}
-
-.c-navbar-editor-icons {
-	position: absolute;
-	width: 0;
-	height: 0;
-}
-
 .c-navbar-menu {
 	margin: 0;
 	padding: 0;
@@ -37,12 +25,6 @@
 	color: #212121;
 }
 
-.c-navbar-menu-link-icon {
-	color: #757575;
-	width: 32px;
-	height: 32px;
-}
-
 .c-navbar-menu-logo {
 	font-size: 1.25rem;
 	text-align: center;
@@ -53,12 +35,17 @@
 }
 
 .c-navbar-menu-icon {
-	font-size: 1rem;
 	text-align: center;
 	text-decoration: none;
 	color: #868686;
 	float: right;
 	padding: 1rem;
+}
+
+.c-navbar-menu-icon:hover {
+	text-decoration: none;
+	background-color: #eeeeee;
+	color: #212121;
 }
 
 .c-footer {

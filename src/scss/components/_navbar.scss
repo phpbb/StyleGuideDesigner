@@ -16,6 +16,19 @@
 .c-navbar {
 	overflow: hidden;
 	background-color: #f1f1f1;
+	border-bottom: groove;
+
+	&-svg {
+		position: absolute;
+		width: 0;
+		height: 0;
+	}
+
+	&-editor-icons {
+		position: absolute;
+		width: 0;
+		height: 0;
+	}
 
 	&-menu {
 		list-style-type: none;
@@ -25,10 +38,10 @@
 
 	&-menu-link {
 		float: left;
-		font-size: 17px;
+		font-size: 16px;
 		color: #868686;
 		text-align: center;
-		padding: 17px 16px;
+		padding: 16px 16px;
 		text-decoration: none;
 
 		&:hover {
@@ -49,16 +62,16 @@
 		font-size: 20px;
 		color: #868686;
 		text-align: center;
-		padding: 17px 16px;
+		padding: 16px 16px;
 		text-decoration: none;
 	}
 
 	&-menu-icon {
 		float: right;
-		font-size: 17px;
+		font-size: 16px;
 		color: #868686;
 		text-align: center;
-		padding: 17px 16px;
+		padding: 16px 16px;
 		text-decoration: none;
 	}
 }

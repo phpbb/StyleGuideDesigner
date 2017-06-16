@@ -1,6 +1,19 @@
 .c-navbar {
 	background-color: #f1f1f1;
+	border-bottom: groove;
 	overflow: hidden;
+}
+
+.c-navbar-svg {
+	position: absolute;
+	width: 0;
+	height: 0;
+}
+
+.c-navbar-editor-icons {
+	position: absolute;
+	width: 0;
+	height: 0;
 }
 
 .c-navbar-menu {
@@ -10,12 +23,12 @@
 }
 
 .c-navbar-menu-link {
-	font-size: 1.0625rem;
+	font-size: 1rem;
 	text-align: center;
 	text-decoration: none;
 	color: #868686;
 	float: left;
-	padding: 1.0625rem 1rem;
+	padding: 1rem;
 }
 
 .c-navbar-menu-link:hover {
@@ -36,20 +49,21 @@
 	text-decoration: none;
 	color: #868686;
 	float: left;
-	padding: 1.0625rem 1rem;
+	padding: 1rem;
 }
 
 .c-navbar-menu-icon {
-	font-size: 1.0625rem;
+	font-size: 1rem;
 	text-align: center;
 	text-decoration: none;
 	color: #868686;
 	float: right;
-	padding: 1.0625rem 1rem;
+	padding: 1rem;
 }
 
 .c-footer {
 	text-align: center;
+	border-top: groove;
 }
 
 /*# sourceMappingURL=theme.css.map */

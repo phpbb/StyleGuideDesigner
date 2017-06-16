@@ -1,0 +1,41 @@
+doctype html
+
+html
+	head
+		meta(charset="UTF-8")
+		meta(http-equiv="X-UA-Compatible" content="IE-edge, chrome=1")
+		meta(name="viewport" content="width=device-width, initial-scale=1")
+		title Styleguide Driven Development
+		link(rel="stylesheet", href="/css/core.0.12.0.css")
+		link(rel="stylesheet", href="/css/theme.css")
+	body
+		block head
+			.c-navbar
+				ul.c-navbar-menu
+					li.c-navbar-menu-item
+						a.c-navbar-menu-logo(href="/")
+							svg.c-navbar-menu-link-icon
+							span.c-navbar-menu-text Placeholder Text
+					li.c-navbar-menu-item
+						a.c-navbar-menu-link(href="/demo")
+							svg.c-navbar-menu-link-icon
+							span.c-navbar-menu-text Demo
+					li.c-navbar-menu-item
+						a.c-navbar-menu-link(href="/documentation")
+							svg.c-navbar-menu-link-icon
+							span.c-navbar-menu-text Documentation
+					li.c-navbar-menu-item
+						a.c-navbar-menu-link(href="/settings")
+							svg.c-navbar-menu-link-icon
+							span.c-navbar-menu-text Settings
+					li.c-navbar-menu-item
+						a.c-navbar-menu-icon(href="#")
+							svg.c-navbar-menu-link-icon
+							span.c-navbar-menu-text Git
+			hr
+		block content
+		block foot
+			footer.c-footer
+				hr
+				a(href="https://github.com/sahil505/StyleGuideDesigner", target="_blank") Git
+				p Developed for <a href="https://www.phpbb.com/" target="_blank">phpBB</a>

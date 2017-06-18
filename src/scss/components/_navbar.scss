@@ -15,8 +15,18 @@
 // @scss
 .c-navbar {
 	overflow: hidden;
-	background-color: #f1f1f1;
-	border-bottom: groove;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+
+	&-logo {
+		@include type(title);
+		line-height: 1;
+		float: left;
+		flex: 1;
+		margin-bottom: 0;
+		padding: 16px;
+	}
 
 	&-menu {
 		list-style-type: none;
@@ -24,41 +34,29 @@
 		padding: 0;
 	}
 
-	&-menu-link {
-		float: left;
-		font-size: 16px;
-		color: #868686;
-		text-align: center;
-		padding: 16px;
-		text-decoration: none;
-
-		&:hover {
-			text-decoration: none;
-			background-color: #eeeeee;
-			color: #212121;
-		}
-	}
-
-	&-menu-logo {
-		float: left;
-		font-size: 20px;
-		color: #868686;
-		text-align: center;
-		padding: 16px;
-		text-decoration: none;
-	}
-
-	&-menu-icon {
+	&-menu-item {
+		display: flex;
 		float: right;
+	}
+
+	&-menu-link {
+		display: inline-block;
+		font-size: 16px;
+		line-height: 56px;
 		color: #868686;
-		text-align: center;
-		padding: 16px;
+		padding: 0 16px;
 		text-decoration: none;
 
 		&:hover {
 			text-decoration: none;
-			background-color: #eeeeee;
-			color: #212121;
 		}
+	}
+
+	&-menu-text {
+	padding: 8px;
+	}
+
+	&-icon {
+		margin-right: 0;
 	}
 }

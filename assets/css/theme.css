@@ -1,7 +1,24 @@
 .c-navbar {
-	background-color: #f1f1f1;
-	border-bottom: groove;
+	display: -webkit-flex;
+	display: flex;
 	overflow: hidden;
+	-webkit-flex-direction: row;
+	flex-direction: row;
+	-webkit-flex-wrap: nowrap;
+	flex-wrap: nowrap;
+}
+
+.c-navbar-logo {
+	font-size: 1.25rem;
+	font-weight: 500;
+	line-height: 1.6;
+	line-height: 1;
+	letter-spacing: 0.02em;
+	float: left;
+	-webkit-flex: 1;
+	flex: 1;
+	margin-bottom: 0;
+	padding: 1rem;
 }
 
 .c-navbar-menu {
@@ -10,42 +27,31 @@
 	list-style-type: none;
 }
 
+.c-navbar-menu-item {
+	display: -webkit-flex;
+	display: flex;
+	float: right;
+}
+
 .c-navbar-menu-link {
 	font-size: 1rem;
-	text-align: center;
+	line-height: 56px;
 	text-decoration: none;
 	color: #868686;
-	float: left;
-	padding: 1rem;
+	display: inline-block;
+	padding: 0 1rem;
 }
 
 .c-navbar-menu-link:hover {
 	text-decoration: none;
-	background-color: #eeeeee;
-	color: #212121;
 }
 
-.c-navbar-menu-logo {
-	font-size: 1.25rem;
-	text-align: center;
-	text-decoration: none;
-	color: #868686;
-	float: left;
-	padding: 1rem;
+.c-navbar-menu-text {
+	padding: 0.5rem;
 }
 
-.c-navbar-menu-icon {
-	text-align: center;
-	text-decoration: none;
-	color: #868686;
-	float: right;
-	padding: 1rem;
-}
-
-.c-navbar-menu-icon:hover {
-	text-decoration: none;
-	background-color: #eeeeee;
-	color: #212121;
+.c-navbar-icon {
+	margin-right: 0;
 }
 
 .c-footer {

@@ -1,0 +1,68 @@
+//------------------------------------------------------------------------------
+// @component: Navbar
+//------------------------------------------------------------------------------
+// @description
+//
+//------------------------------------------------------------------------------
+
+//
+// @settings
+
+// Layout Variables
+$navbar-spacing: 16px !default;
+
+
+// Theme Variables
+$menu-link-color: $black-54 !default;
+$menu-link-hover-color: $default-action-color-hover !default;
+
+
+//
+// @scss
+.c-navbar {
+	overflow: hidden;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+
+	&-logo {
+		@include type(title);
+		line-height: 1;
+		float: left;
+		flex: 1;
+		margin-bottom: 0;
+		padding: $navbar-spacing;
+	}
+
+	&-menu {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	&-menu-item {
+		display: flex;
+		float: right;
+	}
+
+	&-menu-link {
+		display: inline-block;
+		font-size: 16px;
+		line-height: 3.5;
+		color: $menu-link-color;
+		padding: 0 16px;
+		text-decoration: none;
+
+		&:hover {
+			color: $menu-link-hover-color;
+		}
+	}
+
+	&-menu-text {
+		padding: 8px;
+	}
+
+	&-icon {
+		margin-right: 0;
+	}
+}

@@ -37,13 +37,13 @@
 	font-size: 1rem;
 	line-height: 3.5;
 	text-decoration: none;
-	color: #868686;
+	color: #757575;
 	display: inline-block;
 	padding: 0 1rem;
 }
 
 .c-navbar-menu-link:hover {
-	text-decoration: none;
+	color: #258cf4;
 }
 
 .c-navbar-menu-text {
@@ -56,7 +56,6 @@
 
 .c-footer {
 	text-align: center;
-	border-top: groove;
 }
 
 /*# sourceMappingURL=theme.css.map */

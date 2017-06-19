@@ -1,4 +1,4 @@
-## Styleguide Designer
+# Styleguide Designer
 [![Build Status](https://travis-ci.org/sahil505/StyleGuideDesigner.svg?branch=master)](https://travis-ci.org/sahil505/StyleGuideDesigner)
 
 ## What is it

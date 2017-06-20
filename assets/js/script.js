@@ -1,5 +1,8 @@
-import message from '/test.json';
 window.onload = function () {
+	var Vue = require('vue');
+	var Resource = require('vue-resource');
+	Vue.use(Resource);
+
 	var app = new Vue({
 		el: '.app',
 		data: function () {

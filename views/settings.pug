@@ -1,4 +1,6 @@
 extends layout.pug
 
 block content
-		p Content of the Settings page will go here!
+		.app
+			h1 {{ message }}
+			input(type="text", v-model="message")

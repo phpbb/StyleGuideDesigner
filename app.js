@@ -1,9 +1,10 @@
 var path = require('path');
 var express = require('express');
+var fs = require('fs');
 
 var app = express();
 
-var settings = require('./assets/js/script');
+var settings = require('./app/controller/settings');
 
 // All environments
 app.set('port', process.env.PORT || 3000);

@@ -3,6 +3,8 @@ var express = require('express');
 
 var app = express();
 
+var settings = require('./assets/js/script');
+
 // All environments
 app.set('port', process.env.PORT || 3000);
 app.set('views', './views');
@@ -10,6 +12,7 @@ app.set('view engine', 'pug');
 
 // Set static path
 app.use(express.static(path.join(__dirname, 'assets')));
+app.use('/settings', settings);
 
 // Routes
 app.get('/', function (req, res) {

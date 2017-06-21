@@ -1,6 +1,6 @@
 {
   "name": "sdd",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Styleguide Driven Development System for creating, managing, customizing, & editing themesfor phpBB.",
   "main": "app.js",
   "xo": {

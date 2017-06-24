@@ -29,6 +29,7 @@
   },
   "homepage": "https://github.com/sahil505/StyleGuideDesigner#readme",
   "dependencies": {
+    "body-parser": "^1.17.2",
     "del": "^2.2.2",
     "express": "^4.15.3",
     "express-validator": "^3.2.0",

@@ -1,10 +1,8 @@
 var express = require('express');
 var router = express.Router();
 
-var json = require('../models/settings');
-
-router.get('/get', function (req, res) {
-	res.send(json);
+router.get('/', function (req, res, next) {
+	res.render('settings');
 })
 
 module.exports = router;

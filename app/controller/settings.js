@@ -1,9 +1,7 @@
 var express = require('express');
 var router = express.Router();
-var fs = require('fs');
 
-var jsonString = fs.readFileSync('./app/test.json', 'utf8');
-var jsonObj = JSON.parse(jsonString);
+var jsonObj = require('../test.json');
 
 /* GET settings page*/
 router.get('/', function (req, res, next) {

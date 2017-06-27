@@ -2,5 +2,6 @@ extends layout.pug
 
 block content
 		.app
-			h1 {{ message }}
-			input(type="text", v-model="message")
+			ol
+				config-list(v-for="item in configList", v-bind:config="item", v-bind:key="item.id")
+			

@@ -1,7 +1,12 @@
 window.onload = function() {
 	Vue.component('config-list', {
 		props: ['config'],
-		template: `<li><input type="text" v-model="config.text">{{ config.text }}</li>`
+		template: `<li><input type="text" v-on:keyup="pressKey" v-model="config.text">{{ config.text }}</li>`, 
+		methods: {
+			pressKey: function () {
+				console.log('Config Changed!');
+			}
+		}
 	})
 	var app = new Vue({
 		el: '.app',

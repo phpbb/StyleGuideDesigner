@@ -3,8 +3,8 @@ window.onload = function() {
 		props: ['config'],
 		template: `<li><input type="text" v-on:keyup="pressKey" v-model="config.text">{{ config.text }}</li>`, 
 		methods: {
-			pressKey: function () {
-				console.log('Config Changed!');
+			pressKey: function (e) {
+				console.log(e.target.value);
 			}
 		}
 	})

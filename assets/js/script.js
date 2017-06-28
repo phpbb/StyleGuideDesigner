@@ -30,7 +30,7 @@ window.onload = function() {
 						document.getElementById("configDemo").innerHTML = this.responseText;
 					}
 				};
-				xhttp.open("GET", "./test.json", true);
+				xhttp.open("GET", "/settings/configs", true);
 				xhttp.send();
 			}
 

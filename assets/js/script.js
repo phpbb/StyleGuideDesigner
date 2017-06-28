@@ -1,9 +1,9 @@
 window.onload = function() {
 	Vue.component('config-list', {
 		props: ['config'],
-		template: `<li><input type="text" v-on:keyup="pressKey" v-model="config.text">{{ config.text }}</li>`, 
+		template: `<li><input type="text" v-on:blur="changeConfig" v-model="config.text">{{ config.text }}</li>`, 
 		methods: {
-			pressKey: function (e) {
+			changeConfig: function (e) {
 				console.log(e.target.value);
 			}
 		}

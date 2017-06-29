@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sahil505/StyleGuideDesigner.git"
+    "url": "git+https://github.com/phpbb/StyleGuideDesigner.git"
   },
   "keywords": [
     "sdd",
@@ -25,9 +25,9 @@
   "author": "Sahil Khokhar",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/sahil505/StyleGuideDesigner/issues"
+    "url": "https://github.com/phpbb/StyleGuideDesigner/issues"
   },
-  "homepage": "https://github.com/sahil505/StyleGuideDesigner#readme",
+  "homepage": "https://github.com/phpbb/StyleGuideDesigner#readme",
   "dependencies": {
     "body-parser": "^1.17.2",
     "del": "^2.2.2",

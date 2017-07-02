@@ -1,15 +1,22 @@
 var express = require('express');
 var router = express.Router();
+var fs = require('fs');
 
-var configData = require('../test.json');
+var configFile = '../test.json';
+var configData = require(configFile);
 var config = configData;
 
 // Route to CREATE a config
 router.post('/configs', function (req, res) {
 	// res.json({response: "You sent a POST request!"});
-	newConfig = req.body;
-	res.json(newConfig);
-	configData = newConfig;
+	configData = req.body;
+	res.json(configData);
+	fs.writeFile(configFile, JSON.stringify(configData, null, 2), function (err) {
+		if(err)
+			return console.log(err);
+		console.log(JSON.stringify(configData));
+		console.log('writing to ' + configFile);
+	});
 });
 
 // Route to READ all the configs

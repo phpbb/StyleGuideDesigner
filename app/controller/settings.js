@@ -1,6 +1,6 @@
 var express = require('express');
-var router = express.Router();
 var fs = require('fs');
+var router = express.Router();
 
 var configFile = '../test.json';
 var configData = require(configFile);
@@ -10,12 +10,13 @@ var config = configData;
 router.post('/configs', function (req, res) {
 	// res.json({response: "You sent a POST request!"});
 	configData = req.body;
+	console.log(configData);
 	res.json(configData);
-	fs.writeFile(configFile, JSON.stringify(configData, null, 2), function (err) {
+	fs.writeFile(configFile, JSON.stringify(configData, null, 2), 'utf8', function (err) {
 		if(err)
 			return console.log(err);
-		console.log(JSON.stringify(configData));
-		console.log('writing to ' + configFile);
+		// console.log(JSON.stringify(configData));
+		// console.log('writing to ' + configFile);
 	});
 });
 

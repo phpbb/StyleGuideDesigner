@@ -14,9 +14,8 @@ window.onload = function() {
 				}
 				this.$http.post('/settings/configs', newConfig)
 					.then(function(response) {
-						console.log(response);
+						console.log(response.body);
 					});
-				// console.log(e.target.value);
 			}
 		}
 	})

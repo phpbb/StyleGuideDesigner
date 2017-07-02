@@ -2,9 +2,21 @@ window.onload = function() {
 	Vue.component('config-list', {
 		props: ['config'],
 		template: `<li><input type="text" v-on:blur="changeConfig" v-model="config.text">{{ config.text }}</li>`, 
+		data () {
+			return {
+				configList: {}
+			}
+		},
 		methods: {
 			changeConfig: function (e) {
-				console.log(e.target.value);
+				let newConfig = {
+					text: e.target.value
+				}
+				this.$http.post('/settings/configs', newConfig)
+					.then(function(response) {
+						console.log(response);
+					});
+				// console.log(e.target.value);
 			}
 		}
 	})
@@ -24,7 +36,6 @@ window.onload = function() {
 				this.$http.get('/settings/configs')
 					.then(function(response){
 						this.configList = response.body;
-						console.log(response.body);
 					});
 			}
 			// changeConfigu: function() {

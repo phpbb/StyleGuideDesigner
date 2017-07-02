@@ -7,9 +7,9 @@ var config = configData;
 // Route to CREATE a config
 router.post('/configs', function (req, res) {
 	// res.json({response: "You sent a POST request!"});
-	config.message = req.body.message;
-		
-	res.json({message: req.body.message});
+	newConfig = req.body;
+	res.json(newConfig);
+	configData = newConfig;
 });
 
 // Route to READ all the configs
@@ -27,7 +27,7 @@ router.get('/configs/:configID', function (req, res) {
 // Route to UPDATE a single config with the corresponding ID
 router.put('/configs/:configID', function (req, res) {
 	// res.json({response: "You sent a UPDATE request with ID - " + req.params.configID});
-	config.message = req.body.message;
+	config = req.body;
 	res.json({message: 'Config Updated!'});
 
 });

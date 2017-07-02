@@ -12,27 +12,25 @@ window.onload = function() {
 		el: '.app',
 		data() {
 			return {
-				configList: [
-				{ id: 0, text: 'PORT' },
-				{ id: 1, text: 'Variables' },
-				{ id: 2, text: 'Extension' }
-				]
+				configList: []
 			}
 		},
 		created () {
 			this.loadConfig();
+			// this.changeConfigu();
 		},
 		methods: {
-			loadConfig: function() {
-				var xhttp = new XMLHttpRequest();
-				xhttp.onreadystatechange = function() {
-					if (this.readyState == 4 && this.status == 200) {
-						document.getElementById("configDemo").innerHTML = this.responseText;
-					}
-				};
-				xhttp.open("GET", "/settings/configs", true);
-				xhttp.send();
+			loadConfig() {
+				this.$http.get('/settings/configs')
+					.then(function(response){
+						this.configList = response.body;
+						console.log(response.body);
+					});
 			}
+			// changeConfigu: function() {
+			// 	this.text = "sahil505";
+			// 	console.log(this.text);
+			// }
 
 		}
 	})

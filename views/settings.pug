@@ -2,6 +2,6 @@ extends layout.pug
 
 block content
 		.app
-			ol
+			ul
 				config-list(v-for="item in configList", v-bind:config="item", v-bind:key="item.id")
-		#configDemo
+			input#configDemo

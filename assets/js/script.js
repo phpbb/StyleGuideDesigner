@@ -1,7 +1,7 @@
-window.onload = function() {
+window.onload = function () {
 	Vue.component('config-list', {
 		props: ['config'],
-		template: `<li><input type="text" v-on:blur="changeConfig" v-model="config.text">{{ config.text }}</li>`, 
+		template: `<li><input type="text" v-on:blur="changeConfig" v-model="config.text">{{ config.text }}</li>`,
 		data () {
 			return {
 				configList: {}
@@ -37,5 +37,5 @@ window.onload = function() {
 				});
 			}
 		}
-	})
+	});
 }

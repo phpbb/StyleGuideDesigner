@@ -9,7 +9,6 @@ var demo = require('./app/controller/demo');
 var settings = require('./app/controller/settings');
 var documentation = require('./app/controller/documentation');
 
-
 // All environments
 app.set('port', process.env.PORT || 3000);
 app.set('views', './views');
@@ -28,7 +27,7 @@ app.use('/documentation', documentation);
 
 // Express Server Setup
 app.listen(app.get('port'), function (err) {
-	if(err) {
+	if (err) {
 		console.log('Express Server Error!');
 	} else {
 		console.log('Express server listening on port ' + app.get('port'));

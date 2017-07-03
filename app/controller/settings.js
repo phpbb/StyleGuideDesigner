@@ -3,7 +3,7 @@ var express = require('express');
 
 var router = express.Router();
 
-var configFile = './test.json';
+var configFile = '../test.json';
 var configData = require(configFile);
 
 // Route to CREATE a config

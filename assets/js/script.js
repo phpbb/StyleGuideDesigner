@@ -5,37 +5,37 @@ window.onload = function () {
 		data () {
 			return {
 				configList: {}
-			}
+			};
 		},
 		methods: {
 			changeConfig: function (e) {
 				let newConfig = {
 					text: e.target.value
-				}
+				};
 				this.$http.post('/settings/configs', newConfig)
-				.then(function(response) {
+				.then(function (response) {
 					console.log(response.body);
 				});
 			}
 		}
-	})
-	var app = new Vue({
+	});
+	new Vue({
 		el: '.app',
 		data() {
 			return {
 				configList: []
-			}
+			};
 		},
-		created () {
+		created() {
 			this.loadConfig();
 		},
 		methods: {
 			loadConfig() {
 				this.$http.get('/settings/configs')
-				.then(function(response){
+				.then(function (response) {
 					this.configList = response.body;
 				});
 			}
 		}
 	});
-}
+};

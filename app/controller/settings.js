@@ -30,7 +30,7 @@ router.get('/configs/:configID', function (req, res) {
 
 // Route to UPDATE a single config with the corresponding ID
 router.put('/configs/:configID', function (req, res) {
-	config = req.body;
+	configData = req.body;
 	res.json({message: 'Config Updated!'});
 });
 

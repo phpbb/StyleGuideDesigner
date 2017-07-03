@@ -8,14 +8,16 @@ var configData = require(configFile);
 
 // Route to CREATE a config
 router.post('/configs', function (req, res) {
-	var data = configData.push(req.body);
-	console.log(configData);
-	fs.writeFile(configFile, data, function (err) {
+	// Assign the configData variable to the post request body that we get from vue component
+	configData = req.body;
+	res.json(configData);
+	/* writeFIle function, added the path, config data string, utf encoding 
+	and a callback for any possible errors*/
+	fs.writeFile(configFile, JSON.stringify(configData, null, 2), 'utf8', function (err) {
 		if (err) {
 			return console.log(err);
 		}
 	});
-	res.json(configData);
 });
 
 // Route to READ all the configs

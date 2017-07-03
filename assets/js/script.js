@@ -13,9 +13,9 @@ window.onload = function() {
 					text: e.target.value
 				}
 				this.$http.post('/settings/configs', newConfig)
-					.then(function(response) {
-						console.log(response.body);
-					});
+				.then(function(response) {
+					console.log(response.body);
+				});
 			}
 		}
 	})
@@ -28,20 +28,14 @@ window.onload = function() {
 		},
 		created () {
 			this.loadConfig();
-			// this.changeConfigu();
 		},
 		methods: {
 			loadConfig() {
 				this.$http.get('/settings/configs')
-					.then(function(response){
-						this.configList = response.body;
-					});
+				.then(function(response){
+					this.configList = response.body;
+				});
 			}
-			// changeConfigu: function() {
-			// 	this.text = "sahil505";
-			// 	console.log(this.text);
-			// }
-
 		}
 	})
 }

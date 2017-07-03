@@ -34,7 +34,7 @@ window.onload = function () {
 			this.loadConfig();
 		},
 		methods: {
-			/* This method is called as soon as the page loads 
+			/* This method is called as soon as the page loads
 			and it makes a get request on the get route and gets the response*/
 			loadConfig() {
 				this.$http.get('/settings/configs')

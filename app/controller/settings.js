@@ -25,11 +25,6 @@ router.get('/configs', function (req, res) {
 	res.json(configData);
 });
 
-// Route to UPDATE a single config with the corresponding ID
-router.put('/configs/:configID', function (req, res) {
-	res.json({message: 'Config Updated!'});
-});
-
 // Render settings page
 router.get('/', function (req, res) {
 	res.render('settings');

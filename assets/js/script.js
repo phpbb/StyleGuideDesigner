@@ -1,7 +1,8 @@
 window.onload = function () {
 	Vue.component('config-list', {
 		props: ['config'],
-		template: `<li><input type="text" v-on:blur="changeConfig" v-model="config.text">{{ config.text }}</li>`,
+		template: `<li><label>{{config.name}}</label>
+		<input type="text" v-on:blur="changeConfig" v-model="config.setting"></li>`,
 		data() {
 			return {
 				configList: {}
@@ -10,9 +11,10 @@ window.onload = function () {
 		methods: {
 			// Method called on blur of the input
 			changeConfig: function (e) {
+				console.log(e);
 				// This new object will record the value of the input
 				let newConfig = {
-					text: e.target.value
+					setting: e.target.value
 				};
 				// Send the new object on the post route
 				this.$http.post('/settings/configs', newConfig)
@@ -29,14 +31,14 @@ window.onload = function () {
 				configList: []
 			};
 		},
-		created() {
+		created: function() {
 			// Call the method as soon as the page loads
-			this.loadConfig();
+			this.fetchConfig();
 		},
 		methods: {
 			/* This method is called as soon as the page loads
 			and it makes a get request on the get route and gets the response*/
-			loadConfig() {
+			fetchConfig() {
 				this.$http.get('/settings/configs')
 				.then(function (response) {
 					this.configList = response.body;

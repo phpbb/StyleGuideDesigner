@@ -1,4 +1,37 @@
 [
-	{"text": "Styleguide"}, 
-	{"text": "Sahil"}
+	{
+		"id": 1,
+		"name": "Root",
+		"setting": "First Setting"
+	}, 
+	
+	{
+		"id": 2,
+		"name": "Global Folder Name",
+		"setting": "Second Setting"
+	},
+
+	{
+		"id": 3,
+		"name": "Current Theme Folder Name",
+		"setting": "Third Setting"
+	},
+
+	{
+		"id": 4,
+		"name": "Template Folder Name",
+		"setting": "Fourth Setting"
+	},
+
+	{
+		"id": 5,
+		"name": "Twig Folder Name",
+		"setting": "Fifth Setting"
+	},
+
+	{
+		"id": 6,
+		"name": "SCSS Folder Name",
+		"setting": "Sixth Setting"
+	}
 ]

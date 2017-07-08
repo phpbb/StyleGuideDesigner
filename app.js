@@ -4,7 +4,7 @@ var bodyParser = require('body-parser');
 
 var app = express();
 
-var settings = require('./app/controller/settings');
+var routes = require('./app/routes');
 
 // All environments
 app.set('port', process.env.PORT || 3000);
@@ -15,9 +15,8 @@ app.set('view engine', 'pug');
 app.use(express.static(path.join(__dirname, 'assets')));
 
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({extended: false}));
 
-app.use('/settings', settings);
+app.use('/settings', routes);
 
 // Express Server Setup
 app.listen(app.get('port'), function (err) {

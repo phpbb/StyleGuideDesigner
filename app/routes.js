@@ -1,7 +1,7 @@
-var fs = require('fs');
 var	express = require('express');
-var	router = express.Router();
 var	config = require('./controller/settings');
+
+var	router = express.Router();
 var configData;
 
 // Route to CREATE a config

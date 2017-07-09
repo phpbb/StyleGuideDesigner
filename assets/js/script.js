@@ -30,7 +30,7 @@ window.onload = function () {
 				configList: []
 			};
 		},
-		created: function() {
+		created: function () {
 			// Call the method as soon as the page loads
 			this.fetchConfig();
 		},

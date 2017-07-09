@@ -1,25 +1,19 @@
 var fs = require('fs');
-	express = require('express');
-	router = express.Router();
-	configData = require('./config.json');
-	configController = require('./controller/settings');
+var	express = require('express');
+var	router = express.Router();
+var	config = require('./controller/settings');
+var configData;
 
 // Route to CREATE a config
 router.post('/configs', function (req, res) {
-	configData = configController.config(configData, req);
+	configData = config.update(req);
 	console.log(configData);
 	res.json(configData);
-	/* writeFIle function, added the path, config data string, utf encoding
-	and a callback for any possible errors*/
-	// fs.writeFile('../config.json', configData, 'utf8', function (err) {
-	// 	if (err) {
-	// 		return console.log(err);
-	// 	}
-	// });
 });
 
 // Route to READ all the configs
 router.get('/configs', function (req, res) {
+	configData = config.data;
 	res.json(configData);
 });
 

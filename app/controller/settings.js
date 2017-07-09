@@ -1,12 +1,19 @@
-var exports = module.exports = {};
-	
+var config = module.exports = {};
 
-exports.config = function (configData, req) {
-// Assign the configData variable to the post request body that we get from vue component
-	configData.push({
-		"id": configData.length + 1,
+config.data = require('../config.json');
+config.update = function (req) {
+	config.data.push({
+		"id": config.data.length + 1,
 		"name": "new addition",
 		"setting": req.body.setting
 	});
-	return configData;
-};
+	return config.data;
+	
+	/* writeFile function, added the path, config data string, utf encoding
+	and a callback for any possible errors*/
+	fs.writeFile('../config.json', config.data, 'utf8', function (err) {
+		if (err) {
+			return console.log(err);
+		}
+	});
+}

@@ -10,7 +10,7 @@ window.onload = function () {
 		},
 		methods: {
 			// Method called on blur of the input
-			changeConfig (e) {
+			changeConfig(e) {
 				// This new object will record the value of the input
 				let newConfig = {
 					setting: e.target.value

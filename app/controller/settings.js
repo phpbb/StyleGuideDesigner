@@ -9,7 +9,7 @@ config.update = function (req) {
 		id: req.body.id,
 		name: req.body.name,
 		setting: req.body.setting
-	}
+	};
 
 	/* writeFile function, added the path, config data string, utf encoding
 	and a callback for any possible errors*/

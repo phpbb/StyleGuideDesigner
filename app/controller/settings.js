@@ -4,7 +4,7 @@ var fs = require('fs');
 config.data = require('../config.json');
 
 config.update = function (req) {
-	// Update the config objects
+	// Update the config object
 	config.data[req.body.id - 1] = {
 		id: req.body.id,
 		name: req.body.name,

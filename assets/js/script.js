@@ -11,7 +11,7 @@ window.onload = function () {
 		methods: {
 			// Method called on blur of the input
 			changeConfig(e) {
-				// This new object will record the value of the input
+				// This new object will record values on event change
 				let newConfig = {
 					id: e.path[1].firstChild.id,
 					name: e.path[1].innerText,
@@ -33,7 +33,7 @@ window.onload = function () {
 			};
 		},
 		created: function () {
-			// Call the method as soon as the page loads
+			// Call this method as soon as the page loads
 			this.fetchConfig();
 		},
 		methods: {

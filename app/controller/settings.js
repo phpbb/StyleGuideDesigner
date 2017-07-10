@@ -4,12 +4,12 @@ var fs = require('fs');
 config.data = require('../config.json');
 
 config.update = function (req) {
-	// This is temporary
-	config.data.push({
-		id: config.data.length + 1,
-		name: 'new addition',
+	// Update the config objects
+	config.data[req.body.id - 1] = {
+		id: req.body.id,
+		name: req.body.name,
 		setting: req.body.setting
-	});
+	}
 
 	/* writeFile function, added the path, config data string, utf encoding
 	and a callback for any possible errors*/
@@ -18,6 +18,5 @@ config.update = function (req) {
 			return console.log(err);
 		}
 	});
-	
 	return config.data;
 };

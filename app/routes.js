@@ -5,6 +5,7 @@ var	router = express.Router();
 
 // Route to CREATE a config
 router.post('/configs', function (req, res) {
+	
 	var configData = config.update(req);
 	console.log(configData);
 	res.send(config.update(req));

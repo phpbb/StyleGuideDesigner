@@ -1,14 +1,14 @@
 var config = module.exports = {};
 
 var fs = require('fs');
-config.data = require('../config.json');
+config.data = [];
 
 config.update = function (req) {
 
-	// Update the config object
-	config.data[req.body.id - 1] = config.get(req);
-
-	return config.data;
+	var data = config.get(req);
+	config.set()[data.id - 1] = data;
+	
+	return config.set();
 };
 
 config.get = function(req) {
@@ -16,5 +16,10 @@ config.get = function(req) {
 		id: req.body.id,
 		name: req.body.name,
 		setting: req.body.setting
-	}
+	};
+};
+
+config.set = function() {
+	config.data = require('../config.json');
+	return config.data;
 };

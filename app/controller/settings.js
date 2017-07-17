@@ -1,27 +1,25 @@
-var config = module.exports = {};
+'use strict';
 
-var fs = require('fs');
+var config = module.exports = {};
 
 config.data = [];
 
 config.update = function (req) {
-	var data = config.get();
-	var newConfig = config.set(req);
-	data[newConfig.id - 1] = newConfig;
-	return data;
+	config.get();
+	config.set(req);
 };
 
-config.get = function() {
-	var data = config.data;
-	data = require('../config.json');
-	return data;
+config.get = function () {
+	var data = require('../config.json');
+	config.data = data;
+	return config.data;
 };
 
-config.set = function(req) {
+config.set = function (req) {
 	var newConfig = {
 		id: req.body.id,
 		name: req.body.name,
 		setting: req.body.setting
 	};
-	return newConfig;
+	config.data[newConfig.id - 1] = newConfig;
 };

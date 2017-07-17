@@ -3,7 +3,7 @@ var	config = require('./controller/settings');
 
 var	router = express.Router();
 
-// Route to CREATE a config
+// Route to UPDATE the config
 router.post('/configs', function (req, res) {
 	
 	var configData = config.update(req);

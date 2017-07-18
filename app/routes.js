@@ -7,15 +7,15 @@ var	router = express.Router();
 
 // Route to UPDATE the config
 router.post('/configs', function (req, res) {
-	var configData = config.update(req);
-	console.log(configData);
-	res.send(configData);
+	req.params.update = config.update(req);
+	console.log(req.params.update);
+	res.send(req.params.update);
 });
 
 // Route to READ the configs
 router.get('/configs', function (req, res) {
-	var configData = config.data;
-	res.json(configData);
+	req.params.fetch = config.get();
+	res.json(req.params.fetch);
 });
 
 // Render settings page

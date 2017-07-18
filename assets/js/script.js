@@ -1,3 +1,5 @@
+'use strict';
+
 window.onload = function () {
 	Vue.component('config-list', {
 		props: ['config'],

@@ -2,36 +2,36 @@
 	{
 		"id": 1,
 		"name": "Root",
-		"setting": "First Setting"
+		"setting": "path-1"
 	}, 
 	
 	{
 		"id": 2,
-		"name": "Global Folder Name",
-		"setting": "Second Setting"
+		"name": "Globals",
+		"setting": "path-2"
 	},
 
 	{
 		"id": 3,
-		"name": "Current Theme Folder Name",
-		"setting": "Third Setting"
+		"name": "Current Theme",
+		"setting": "path-3"
 	},
 
 	{
 		"id": 4,
-		"name": "Template Folder Name",
-		"setting": "Fourth Setting"
+		"name": "Template",
+		"setting": "path-4"
 	},
 
 	{
 		"id": 5,
-		"name": "Twig Folder Name",
-		"setting": "Fifth Setting"
+		"name": "Twig",
+		"setting": "path-5"
 	},
 
 	{
 		"id": 6,
-		"name": "SCSS Folder Name",
-		"setting": "Sixth Setting"
+		"name": "SCSS",
+		"setting": "path-6"
 	}
 ]

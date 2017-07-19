@@ -44,7 +44,8 @@ window.onload = function () {
 			fetchConfig() {
 				this.$http.get('/settings/configs')
 				.then(function (res) {
-					this.configList = res.body;
+					console.log(res.fetch);
+					this.configList = res.fetch;
 				});
 			}
 		}

@@ -15,7 +15,7 @@ router.post('/configs', function (req, res) {
 // Route to READ the configs
 router.get('/configs', function (req, res) {
 	req.params.fetch = config.get();
-	res.json(req.params.fetch);
+	res.send(req.params.fetch);
 });
 
 // Render settings page

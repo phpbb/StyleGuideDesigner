@@ -30,9 +30,5 @@ config.set = function (req) {
 
 config.write = function () {
 	var data = config.get();
-	fs.writeFile('../config.json', data, 'utf8', function (err) {
-		if (err) {
-			return console.log(err);
-		}
-	});
+	fs.writeFile('../config.json', data);
 };

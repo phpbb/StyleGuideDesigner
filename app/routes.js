@@ -9,13 +9,13 @@ var	router = express.Router();
 router.post('/configs', function (req, res) {
 	req.params.update = config.update(req);
 	console.log(req.params.update);
-	res.send();
+	res.send(req.params.update);
 });
 
 // Route to READ the configs
 router.get('/configs', function (req, res) {
 	req.params.fetch = config.get();
-	res.send();
+	res.send(req.params.fetch);
 });
 
 // Render settings page

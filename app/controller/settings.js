@@ -29,6 +29,7 @@ config.set = function (req) {
 };
 
 config.write = function () {
-	var data = config.get();
-	fs.writeFile('../config.json', data);
+	// Note data has to be a string, before sending it to the server
+	var data = JSON.stringify(config.get());
+	fs.writeFile('app/config.json', data, 'utf8');
 };

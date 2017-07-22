@@ -8,7 +8,6 @@ var	router = express.Router();
 // Route to UPDATE the config
 router.post('/configs', function (req, res) {
 	req.params.update = config.update(req);
-	console.log(req.params.update);
 	res.send(req.params.update);
 });
 

@@ -11,7 +11,7 @@ router.post('/config', function (req, res) {
 	res.send(req.params.update);
 });
 
-// Route to READ the configs
+// Route to READ the config
 router.get('/config', function (req, res) {
 	req.params.fetch = config.get();
 	res.send(req.params.fetch);

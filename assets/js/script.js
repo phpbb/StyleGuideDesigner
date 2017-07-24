@@ -3,8 +3,8 @@
 window.onload = function () {
 	Vue.component('config-list', {
 		props: ['config'],
-		template: `<li><label v-bind:id=config.id>{{config.name}}</label>
-		<input type="text" v-on:blur="changeConfig" v-model="config.setting"></li>`,
+		template: `<fieldset class="form-group"><label v-bind:id=config.id>{{config.name}}</label>
+		<input type="text" v-on:blur="changeConfig" v-model="config.setting"></fieldset>`,
 		data() {
 			return {
 				configList: {}
@@ -20,7 +20,7 @@ window.onload = function () {
 					setting: e.target.value
 				};
 				// Send the new object on the post route
-				this.$http.post('/settings/configs', newConfig)
+				this.$http.post('/settings/config', newConfig)
 				.then(function (res) {
 					console.log(res.body);
 				});
@@ -42,7 +42,7 @@ window.onload = function () {
 			/* This method is called as soon as the page loads
 			and it makes a get request on the get route */
 			fetchConfig() {
-				this.$http.get('/settings/configs')
+				this.$http.get('/settings/config')
 				.then(function (res) {
 					this.configList = res.body;
 				});

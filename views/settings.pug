@@ -2,7 +2,8 @@ extends layout.pug
 
 block content
 		.app
-			h2.c-config-head Settings
-			.c-config-list
-				form
-					config-list(v-for="item in configList", v-bind:config="item")
+			.wrap
+				.o-container
+					h2.c-config-head Settings
+					form
+						config-list(v-for="item in configList", v-bind:config="item")

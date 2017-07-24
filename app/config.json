@@ -2,7 +2,7 @@
 	{
 		"id": 1,
 		"name": "Root",
-		"setting": "path-1"
+		"setting": "../test/"
 	}, 
 	
 	{

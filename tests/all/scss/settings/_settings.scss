@@ -76,32 +76,5 @@
 
 // 1. Global Settings
 //-------------------------
-@import "../../all/scss/settings/settings";
-
-
-// 2. Tools
-//-------------------------
-@import "../../all/scss/tools/function/functions";
-@import "../../all/scss/tools/mixin/mixins";
-
-
-// 5. Objects
-//-------------------------
-@import "../../scss/objects/button";
-@import "../../scss/objects/col";
-@import "../../scss/objects/grid";
-@import "../../scss/objects/icon";
-@import "../../scss/objects/tag";
-
-// 6. Components
-//-------------------------
-@import "components/forum";
-@import "components/list";
-@import "components/menu";
-@import "components/toolbar";
-@import "components/paging";
-@import "components/topic";
-
-
-// 7. Theme
-//-------------------------
+@import "color";
+@import "default";

@@ -92,16 +92,18 @@
 @import "../../scss/objects/grid";
 @import "../../scss/objects/icon";
 @import "../../scss/objects/tag";
+@import "objects/action-bar";
 
 // 6. Components
 //-------------------------
-@import "components/forum";
-@import "components/list";
-@import "components/menu";
-@import "components/toolbar";
-@import "components/paging";
-@import "components/topic";
+@import "../../all/scss/components/forum";
+@import "../../all/scss/components/list";
+@import "../../all/scss/components/menu";
+@import "../../all/scss/components/toolbar";
+@import "../../all/scss/components/paging";
+@import "../../all/scss/components/topic";
 
 
 // 7. Theme
 //-------------------------
+@import "../../themes/theme";

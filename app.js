@@ -18,7 +18,7 @@ app.use(express.static(path.join(__dirname, 'assets')));
 
 app.use(bodyParser.json());
 
-app.use('/settings', routes);
+app.use('/', routes);
 
 // Express Server Setup
 app.listen(app.get('port'), function (err) {

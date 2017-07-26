@@ -77,30 +77,10 @@
 	clear: both;
 }
 
-.row {
-	margin-right: -0.9375rem;
-	margin-left: -0.9375rem;
-}
-
-.row:before {
-	display: table;
-	content: " ";
-}
-
-.row:after {
-	display: table;
-	content: " ";
-}
-
-.row:after {
-	clear: both;
-}
-
-.col-lg-2 {
+.wrap {
 	position: relative;
 	float: left;
 	width: 16.66666667%;
-	min-height: 1px;
 	padding-right: 0.9375rem;
 	padding-left: 0.9375rem;
 }

@@ -37,29 +37,8 @@ $menu-link-hover-color: $default-action-color-hover !default;
 	}
 }
 
-
-.row {
-	margin-right: -15px;
-	margin-left: -15px;
-
-	&:before {
-		display: table;
-		content: " ";
-	}
-
-	&:after {
-		display: table;
-		content: " ";
-	}
-
-	&:after {
-		clear: both;
-	}
-}
-
-.col-lg-2 {
+.wrap {
 	position: relative;
-	min-height: 1px;
 	padding-right: 15px;
 	padding-left: 15px;
 	float: left;

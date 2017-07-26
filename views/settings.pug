@@ -1,4 +1,9 @@
 extends layout.pug
 
 block content
-		p Content of the Settings page will go here!
+		.app
+			.wrap
+				.o-container
+					h2.c-config-head Settings
+					form
+						config-list(v-for="item in configList", v-bind:config="item")

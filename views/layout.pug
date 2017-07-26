@@ -1,6 +1,6 @@
 doctype html
 
-html
+html(lang="en")
 	head
 		meta(charset="UTF-8")
 		meta(http-equiv="X-UA-Compatible" content="IE-edge, chrome=1")
@@ -15,7 +15,7 @@ html
 				h3.c-navbar-logo Logo
 				ul.c-navbar-menu
 					li.c-navbar-menu-item
-						a.c-navbar-menu-link(href="https://github.com/sahil505/StyleGuideDesigner", target="_blank")
+						a.c-navbar-menu-link(href="https://github.com/phpbb/StyleGuideDesigner", target="_blank")
 							svg.o-icon.c-navbar-icon
 								use(xlink:href="#github")
 					li.c-navbar-menu-item
@@ -41,7 +41,11 @@ html
 		block content
 		block foot
 			footer.c-footer
-				a.c-footer-icon-link(href="https://github.com/sahil505/StyleGuideDesigner", target="_blank")
+				a.c-footer-icon-link(href="https://github.com/phpbb/StyleGuideDesigner", target="_blank")
 					svg.o-icon.c-footer-icon
 						use(xlink:href="#github")
 				p.c-footer-text Developed for <a href="https://www.phpbb.com/" target="_blank">phpBB</a>
+	script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js")
+	script(src="https://unpkg.com/vue@2.0.3/dist/vue.js")
+	script(src="https://cdn.jsdelivr.net/g/vue@2.0.0-rc.4,vue.resource@1.0.0")
+	script(src='/js/script.js')

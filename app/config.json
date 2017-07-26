@@ -1,0 +1,19 @@
+[
+	{
+		"id": 1,
+		"name": "Root",
+		"setting": "../test/"
+	}, 
+	
+	{
+		"id": 2,
+		"name": "Globals",
+		"setting": "../test/all/"
+	},
+
+	{
+		"id": 3,
+		"name": "Current Theme",
+		"setting": "../test/prosilver/"
+	}
+]

@@ -1,6 +1,6 @@
 {
   "name": "sdd",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Styleguide Driven Development System for creating, managing, customizing, & editing themesfor phpBB.",
   "main": "app.js",
   "xo": {
@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sahil505/StyleGuideDesigner.git"
+    "url": "git+https://github.com/phpbb/StyleGuideDesigner.git"
   },
   "keywords": [
     "sdd",
@@ -25,10 +25,11 @@
   "author": "Sahil Khokhar",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/sahil505/StyleGuideDesigner/issues"
+    "url": "https://github.com/phpbb/StyleGuideDesigner/issues"
   },
-  "homepage": "https://github.com/sahil505/StyleGuideDesigner#readme",
+  "homepage": "https://github.com/phpbb/StyleGuideDesigner#readme",
   "dependencies": {
+    "body-parser": "^1.17.2",
     "del": "^2.2.2",
     "express": "^4.15.3",
     "express-validator": "^3.2.0",
@@ -49,6 +50,8 @@
     "stylelint": "^7.10.1",
     "stylelint-order": "^0.4.4",
     "stylelint-scss": "^1.4.4",
+    "vue": "^2.3.4",
+    "vue-resource": "^1.3.4",
     "xo": "^0.16.0"
   }
 }

@@ -18,37 +18,10 @@ $menu-link-hover-color: $default-action-color-hover !default;
 
 //
 // @scss
-.container-fluid {
-	margin-right: auto;
-	margin-left: auto;
-
-	&:before {
-		display: table;
-		content: " ";
-	}
-
-	&:after {
-		display: table;
-		content: " ";
-	}
-
-	&:after {
-		clear: both;
-	}
-}
-
-.wrap {
-	position: relative;
-	padding-right: 15px;
-	padding-left: 15px;
-	float: left;
-	width: 16.66666667%;
-}
-
 .c-sidebar {
 	overflow: hidden;
 	display: flex;
-	flex-direction: row;
+	width: 15%;
 	flex-wrap: nowrap;
 	border: 1px solid transparent;
 	border-right-color: #e7e7e7;

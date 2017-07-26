@@ -2,6 +2,7 @@
 
 var	express = require('express');
 var	config = require('./controller/config');
+var	sidebar = require('./controller/sidebar');
 
 var	router = express.Router();
 
@@ -25,6 +26,12 @@ router.get('/settings', function (req, res) {
 // Render editors page
 router.get('/editor', function (req, res) {
 	res.render('editor');
+});
+
+// Route to READ the file
+router.get('/editor/sidebar', function (req, res) {
+	req.params.fetch = sidebar.get();
+	res.send(req.params.fetch);
 });
 
 module.exports = router;

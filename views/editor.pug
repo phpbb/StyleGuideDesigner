@@ -1,20 +1,7 @@
 extends layout.pug
 
 block content
-	.c-sidebar
-		ul.c-sidebar-menu
-			li.c-sidebar-menu-item
-				a.c-sidebar-menu-link(href="#")
-					span.c-sidebar-menu-text Link-1
-			li.c-sidebar-menu-item
-				a.c-sidebar-menu-link(href="#")
-					span.c-sidebar-menu-text Link-2
-			li.c-sidebar-menu-item
-				a.c-sidebar-menu-link(href="#")
-					span.c-sidebar-menu-text Link-3
-			li.c-sidebar-menu-item
-				a.c-sidebar-menu-link(href="#")
-					span.c-sidebar-menu-text Link-4
-			li.c-sidebar-menu-item
-				a.c-sidebar-menu-link(href="#")
-					span.c-sidebar-menu-text Link-5
+	.sidebar-app
+		.c-sidebar
+			ul.c-sidebar-menu
+				sidebar-list(v-for="item in sidebarList", v-bind:sidebar="item")

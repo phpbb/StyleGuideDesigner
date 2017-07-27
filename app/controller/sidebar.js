@@ -15,7 +15,6 @@ sidebar.get = function () {
 			newData.push(data1[i]);
 		}
 	}
-	console.log(data2);
 	for(var j=0; j<data2.length; j++) {
 		if(data2[j] == 'theme' || data2[j] == 'components') {
 			newData.push(data2[j]);

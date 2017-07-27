@@ -30,7 +30,7 @@ router.get('/editor', function (req, res) {
 
 // Route to READ the file
 router.get('/editor/sidebar', function (req, res) {
-	req.params.fetch = sidebar.get();
+	req.params.fetch = sidebar.getDir();
 	res.send(req.params.fetch);
 });
 

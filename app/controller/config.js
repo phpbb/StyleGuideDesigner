@@ -20,7 +20,7 @@ config.get = function () {
 };
 
 config.set = function (req) {
-	var newConfig = { 
+	var newConfig = {
 		id: req.body.id,
 		name: req.body.name,
 		setting: req.body.setting

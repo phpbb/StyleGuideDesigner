@@ -1,23 +1,23 @@
 'use strict';
 
-var fs = require('fs');
 var model = require('../models/model.js');
 
 var sidebar = module.exports = {};
 
 // Logic to read an array files inside a directory
 sidebar.get = function () {
-	var data1 = fs.readdirSync('tests/all/scss');
-	var data2 = fs.readdirSync('tests/prosilver/scss');
 	var newData = [];
-	for (var i = 0; i < data1.length; i++) {
-		if (data1[i] === 'base' || data1[i] === 'components' || data1[i] === 'objects' || data1[i] === 'settings') {
-			newData.push(data1[i]);
+	var allData = model.data1;
+	var prosilverData = model.data2;
+
+	for (var i = 0; i < allData.length; i++) {
+		if (allData[i] === 'base' || allData[i] === 'components' || allData[i] === 'objects' || allData[i] === 'settings') {
+			newData.push(allData[i]);
 		}
 	}
-	for (var j = 0; j < data2.length; j++) {
-		if (data2[j] === 'theme' || data2[j] === 'components') {
-			newData.push(data2[j]);
+	for (var j = 0; j < prosilverData.length; j++) {
+		if (prosilverData[j] === 'theme' || prosilverData[j] === 'components') {
+			newData.push(prosilverData[j]);
 		}
 	}
 	return newData;

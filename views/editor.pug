@@ -1,0 +1,7 @@
+extends layout.pug
+
+block content
+	.sidebar-app
+		.c-sidebar
+			ul.c-sidebar-menu
+				sidebar-list(v-for="item in sidebarList", v-bind:sidebar="item")

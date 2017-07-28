@@ -58,4 +58,43 @@
 	text-align: center;
 }
 
+.c-sidebar {
+	border: 1px solid transparent;
+	border-right-color: #e7e7e7;
+	display: -webkit-flex;
+	display: flex;
+	overflow: hidden;
+	-webkit-flex-wrap: nowrap;
+	flex-wrap: nowrap;
+	width: 16%;
+}
+
+.c-sidebar-menu {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.c-sidebar-menu-item {
+	display: -webkit-flex;
+	display: flex;
+}
+
+.c-sidebar-menu-link {
+	font-size: 1rem;
+	line-height: 3.5;
+	text-decoration: none;
+	color: #757575;
+	display: block;
+	padding: 0 1rem;
+}
+
+.c-sidebar-menu-link:hover {
+	color: #258cf4;
+}
+
+.c-sidebar-menu-text {
+	padding: 0.5rem;
+}
+
 /*# sourceMappingURL=theme.css.map */

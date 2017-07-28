@@ -14,10 +14,15 @@ sidebar.get = function () {
 			newData.push(allData[i]);
 		}
 	}
+	newData.push('--------------');
 	for (var j = 0; j < prosilverData.length; j++) {
 		if (prosilverData[j] === 'theme' || prosilverData[j] === 'components' || prosilverData[j] === 'objects') {
 			newData.push(prosilverData[j]);
 		}
 	}
+	var swap = newData[1];
+	newData[1] = newData[3];
+	newData[3] = swap;
+
 	return newData;
 };

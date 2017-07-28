@@ -24,6 +24,10 @@ model.get = function () {
 	var swap = localData[1];
 	localData[1] = localData[3];
 	localData[3] = swap;
-	
+
+	var temp = localData[0];
+	localData[0] = localData[1];
+	localData[1] = temp;
+
 	return localData;
 };

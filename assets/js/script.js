@@ -52,8 +52,8 @@ window.onload = function () {
 
 	Vue.component('sidebar-list', {
 		props: ['sidebar'],
-		template: `<li class="c-sidebar-menu-item"><a class="c-sidebar-menu-link" href="#">
-		<span class="c-sidebar-menu-text">{{sidebar}}</span></a></li>`,
+		template: `<li class="c-sidebar-menu-item">
+		<span class="c-sidebar-menu-text">{{sidebar}}</span></li>`,
 	});
 	new Vue({
 		el: '.sidebar-app',
